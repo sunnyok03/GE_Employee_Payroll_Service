@@ -10,5 +10,6 @@ public class Main {
         EmployeePayrollService employeePayroll = new EmployeePayrollService(employeePayrollList);
         EmployeePayrollData employeePayrollData = employeePayroll.readEmployeePayrollDetails(scanner);
         employeePayroll.writeEmployeePayrollData(employeePayrollData);
+        employeePayroll.printEmployeePayrollData();
     }
 }

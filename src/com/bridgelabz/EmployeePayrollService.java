@@ -1,9 +1,6 @@
 package com.bridgelabz;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
@@ -53,5 +50,22 @@ public class EmployeePayrollService {
         System.out.println(employeePayrollList);
     }
 
+    /*
+    @desc: print the file line by line
+    @params:
+    @return:
+     */
+    public void printEmployeePayrollData(){
+        try{
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(FILE_PATH));
+            String line = bufferedReader.readLine();
+            while(line != null){
+                System.out.println(line);
+                line = bufferedReader.readLine();
+            }
 
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
