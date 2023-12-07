@@ -17,8 +17,13 @@ public class EmployeePayrollData {
         this.salary = salary;
     }
 
+
     @Override
     public String toString() {
-        return name + " of id " + id + " earns " + salary;
+        return "EmployeePayrollData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }

@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ArrayList<EmployeePayrollData> employeePayrollList = new ArrayList<>();
         EmployeePayrollService employeePayroll = new EmployeePayrollService(employeePayrollList);
-        employeePayroll.readEmployeePayrollDetails(scanner);
-        employeePayroll.writeEmployeePayrollData();
+        EmployeePayrollData employeePayrollData = employeePayroll.readEmployeePayrollDetails(scanner);
+        employeePayroll.writeEmployeePayrollData(employeePayrollData);
     }
 }
