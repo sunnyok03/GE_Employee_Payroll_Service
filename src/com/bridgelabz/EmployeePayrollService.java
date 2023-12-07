@@ -68,4 +68,20 @@ public class EmployeePayrollService {
             System.out.println(e.getMessage());
         }
     }
+
+    /*
+    @desc: show number of entries in the file
+     */
+    public void showNumberOfEntries(){
+        try{
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(FILE_PATH));
+            int count = 0;
+            while(bufferedReader.readLine() != null){
+                count++;
+            }
+            System.out.println("Number of entries: " + count);
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

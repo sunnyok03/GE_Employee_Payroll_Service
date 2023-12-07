@@ -11,5 +11,6 @@ public class Main {
         EmployeePayrollData employeePayrollData = employeePayroll.readEmployeePayrollDetails(scanner);
         employeePayroll.writeEmployeePayrollData(employeePayrollData);
         employeePayroll.printEmployeePayrollData();
+        employeePayroll.showNumberOfEntries();
     }
 }
